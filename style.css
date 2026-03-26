@@ -681,6 +681,28 @@ section, nav, footer { position: relative; z-index: 1; }
   margin-bottom: 20px;
   position: relative;
 }
+.coming-soon-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--violet-dim);
+  border: 1.5px solid rgba(124,58,237,.4);
+  color: #a78bfa;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: .08em;
+  padding: 16px 36px;
+  border-radius: 10px;
+  margin-bottom: 16px;
+  box-shadow: 0 0 30px rgba(124,58,237,.15);
+  animation: pulse-violet 2.5s ease-in-out infinite;
+}
+@keyframes pulse-violet {
+  0%, 100% { box-shadow: 0 0 20px rgba(124,58,237,.15); }
+  50%       { box-shadow: 0 0 40px rgba(124,58,237,.35); }
+}
+
 .download-note {
   font-size: .82rem;
   color: var(--text-muted);
