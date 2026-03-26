@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aksrome — Akıllı Tahta Arama Deneyimi</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;500;600&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <canvas id="bg-canvas"></canvas>
+
+  <!-- NAVBAR -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="logo">
+        <span class="logo-icon">A</span>
+        <span class="logo-text">AKSROME</span>
+      </a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Menüyü aç">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#features">Özellikler</a></li>
+        <li><a href="#screenshots">Ekranlar</a></li>
+        <li><a href="#download">İndir</a></li>
+        <li><a href="#faq">SSS</a></li>
+        <li><a href="#download" class="btn-nav">Hemen İndir</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-content">
+      <div class="hero-badge">Akıllı Tahta İçin Tasarlandı</div>
+      <h1 class="hero-title">
+        Akıllı Tahtanız İçin<br />
+        <span class="neon-text">Güçlü Arama</span><br />
+        Deneyimi
+      </h1>
+      <p class="hero-sub">
+        Aksrome ile okulunuzun akıllı tahtasında internet aramasını tamamen yeniden keşfedin.
+        4K kalite, hızlı yükleme ve okul ortamına özel içerik deneyimi.
+      </p>
+      <div class="hero-btns">
+        <a href="#download" class="btn-primary">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Hemen İndir
+        </a>
+        <a href="#features" class="btn-outline">Nasıl Çalışır?</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><span class="stat-num">4K</span><span class="stat-label">Kalite</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-num">Hızlı</span><span class="stat-label">Yükleme</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-num">Okul</span><span class="stat-label">Odaklı</span></div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="browser-mockup">
+        <div class="browser-bar">
+          <div class="browser-dots">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+          </div>
+          <div class="browser-url">
+            <span class="url-icon">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+            </span>
+            aksrome.app
+          </div>
+        </div>
+        <div class="browser-body">
+          <div class="mock-search">
+            <div class="mock-logo-big">A</div>
+            <div class="mock-search-bar">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+              <span>Aramak istediğinizi yazın...</span>
+            </div>
+            <div class="mock-tags">
+              <span>Matematik</span>
+              <span>Tarih</span>
+              <span>Fen Bilimleri</span>
+              <span>Coğrafya</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="glow-orb orb1"></div>
+      <div class="glow-orb orb2"></div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section id="features">
+    <div class="section-inner">
+      <div class="section-header reveal">
+        <span class="section-tag">Özellikler</span>
+        <h2>Neden <span class="neon-text">Aksrome</span>?</h2>
+        <p>Akıllı tahtanız için özel olarak geliştirilen özellikler</p>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card reveal">
+          <div class="feature-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+          </div>
+          <h3>4K Kalite Görüntü</h3>
+          <p>Akıllı tahtanızın tüm çözünürlük kapasitesini kullanan kristal netliğinde arama sonuçları.</p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="feature-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+          </div>
+          <h3>Hızlı & Hafif</h3>
+          <p>Düşük sistem kaynağı kullanımı sayesinde akıllı tahtanızı yavaşlatmadan anında çalışır.</p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="feature-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <h3>Okul İçerik Filtresi</h3>
+          <p>Eğitim ortamına uygun içerik filtrelemesi ile güvenli ve odaklı arama deneyimi.</p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="feature-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg>
+          </div>
+          <h3>Akıllı Tahta Optimizasyonu</h3>
+          <p>Dokunmatik ekran desteği ve büyük formatlı görüntüleme için özel olarak optimize edilmiş arayüz.</p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="feature-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          </div>
+          <h3>Kolay Kurulum</h3>
+          <p>Tek tıkla kurulum. Teknik bilgiye gerek yok. Birkaç saniye içinde kullanmaya başlayın.</p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="feature-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+          </div>
+          <h3>Sürekli Güncelleme</h3>
+          <p>Otomatik güncellemeler ile her zaman en güncel özellikler ve güvenlik yamalarına sahip olun.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SCREENSHOTS -->
+  <section id="screenshots">
+    <div class="section-inner">
+      <div class="section-header reveal">
+        <span class="section-tag">Ekran Görüntüleri</span>
+        <h2>Aksrome'u <span class="neon-text">Keşfet</span></h2>
+        <p>Uygulamanın nasıl göründüğüne bir bakın</p>
+      </div>
+      <div class="carousel-wrapper">
+        <button class="carousel-btn prev" id="carousel-prev" aria-label="Önceki">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>
+        </button>
+        <div class="carousel-track-outer">
+          <div class="carousel-track" id="carousel-track">
+            <div class="carousel-slide">
+              <div class="screen-mockup">
+                <div class="screen-content sc1">
+                  <div class="sc-header">
+                    <span class="sc-logo">A</span>
+                    <span>Aksrome</span>
+                  </div>
+                  <div class="sc-search-area">
+                    <div class="sc-bar">
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+                      Matematik formülleri...
+                    </div>
+                  </div>
+                  <div class="sc-results">
+                    <div class="sc-result-item"></div>
+                    <div class="sc-result-item"></div>
+                    <div class="sc-result-item short"></div>
+                  </div>
+                </div>
+              </div>
+              <p class="slide-caption">Ana Arama Ekranı</p>
+            </div>
+            <div class="carousel-slide">
+              <div class="screen-mockup">
+                <div class="screen-content sc2">
+                  <div class="sc-topbar">
+                    <div class="sc-tab active">Görsel Sonuçlar</div>
+                    <div class="sc-tab">Haberler</div>
+                    <div class="sc-tab">Akademik</div>
+                  </div>
+                  <div class="sc-image-grid">
+                    <div class="sc-img-cell"></div>
+                    <div class="sc-img-cell"></div>
+                    <div class="sc-img-cell"></div>
+                    <div class="sc-img-cell"></div>
+                    <div class="sc-img-cell"></div>
+                    <div class="sc-img-cell"></div>
+                  </div>
+                </div>
+              </div>
+              <p class="slide-caption">4K Görsel Arama</p>
+            </div>
+            <div class="carousel-slide">
+              <div class="screen-mockup">
+                <div class="screen-content sc3">
+                  <div class="sc-sidebar">
+                    <div class="sc-sb-item active"></div>
+                    <div class="sc-sb-item"></div>
+                    <div class="sc-sb-item"></div>
+                  </div>
+                  <div class="sc-main-area">
+                    <div class="sc-card big"></div>
+                    <div class="sc-card-row">
+                      <div class="sc-card small"></div>
+                      <div class="sc-card small"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <p class="slide-caption">Okul Odaklı İçerik</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-btn next" id="carousel-next" aria-label="Sonraki">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+        </button>
+      </div>
+      <div class="carousel-dots" id="carousel-dots">
+        <span class="dot active"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- DOWNLOAD -->
+  <section id="download">
+    <div class="download-inner reveal">
+      <div class="download-glow"></div>
+      <span class="section-tag">İndir</span>
+      <h2>Aksrome'u Bugün <span class="neon-text">Yükle</span></h2>
+      <p>Akıllı tahtanıza kurarak profesyonel arama deneyimini hemen yaşamaya başlayın.</p>
+      <div class="download-btns">
+        <a href="https://github.com/KULLANICI/REPO/releases/download/v1.0/aksrome-setup.exe" class="btn-outline btn-large" class="btn-primary btn-large shine-btn">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Windows için İndir
+        </a>
+        <a href="https://github.com/KULLANICI/REPO/releases/download/v1.0/aksrome.apk" class="btn-outline btn-large" class="btn-outline btn-large">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+          Android için İndir
+        </a>
+      </div>
+      <p class="download-note">Ücretsiz · Güvenli · 1 dakikada kurulum</p>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq">
+    <div class="section-inner">
+      <div class="section-header reveal">
+        <span class="section-tag">SSS</span>
+        <h2>Sık Sorulan <span class="neon-text">Sorular</span></h2>
+      </div>
+      <div class="faq-list">
+        <div class="faq-item reveal">
+          <button class="faq-q">
+            Aksrome nedir ve ne işe yarar?
+            <svg class="faq-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-a">
+            <p>Aksrome, akıllı tahtalar için özel olarak geliştirilmiş bir internet arama ve tarayıcı uygulamasıdır. Google veya Edge gibi çalışır; ancak okul ortamına ve büyük ekranlara özel optimize edilmiştir.</p>
+          </div>
+        </div>
+        <div class="faq-item reveal">
+          <button class="faq-q">
+            Kurulum nasıl yapılır?
+            <svg class="faq-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-a">
+            <p>İndirme butonuna tıklayarak kurulum dosyasını indirin ve çalıştırın. Birkaç tıklama ile kurulum tamamlanır. Teknik bilgiye gerek yoktur.</p>
+          </div>
+        </div>
+        <div class="faq-item reveal">
+          <button class="faq-q">
+            Hangi cihazlarla uyumludur?
+            <svg class="faq-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-a">
+            <p>Aksrome Windows işletim sistemi çalıştıran tüm akıllı tahtalar ve bilgisayarlarla uyumludur. Android desteği de mevcuttur.</p>
+          </div>
+        </div>
+        <div class="faq-item reveal">
+          <button class="faq-q">
+            Ücretsiz mi?
+            <svg class="faq-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-a">
+            <p>Evet, Aksrome tamamen ücretsizdir. Gizli ücret veya abonelik yoktur.</p>
+          </div>
+        </div>
+        <div class="faq-item reveal">
+          <button class="faq-q">
+            4K kalite ne anlama geliyor?
+            <svg class="faq-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-a">
+            <p>Aksrome, görselleri ve içerikleri 4K çözünürlükte render ederek akıllı tahtanızın büyük ekranında en net ve keskin görüntüyü sunar.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <span class="logo-icon">A</span>
+        <span class="logo-text">AKSROME</span>
+      </div>
+      <p class="footer-desc">Akıllı tahtanız için güçlü arama deneyimi.</p>
+      <div class="footer-links">
+        <a href="#features">Özellikler</a>
+        <a href="#screenshots">Ekranlar</a>
+        <a href="#download">İndir</a>
+        <a href="#faq">SSS</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 Aksrome. Tüm hakları saklıdır.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
